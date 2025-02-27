@@ -18,7 +18,6 @@
             padding: 0;
         }
 
-       
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -32,7 +31,6 @@
             animation: fadeIn 2s ease-out;
         }
 
-        
         header {
             background: black;
             padding: 20px;
@@ -43,7 +41,6 @@
             font-size: 3em;
         }
 
-        
         nav ul {
             list-style: none;
             padding: 0;
@@ -60,7 +57,13 @@
             font-weight: bold;
         }
 
-        
+        section {
+            padding: 20px;
+            background: #222;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
         #gallery {
             padding: 20px;
             background: #222;
@@ -85,7 +88,7 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
             transition: transform 0.3s ease;
         }
 
@@ -93,15 +96,48 @@
             transform: scale(1.1);
         }
 
-        
-        section {
+        #cast {
             padding: 20px;
             background: #222;
             margin: 20px;
             border-radius: 10px;
         }
 
-        
+        #cast h2 {
+            color: red;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cast-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cast-member {
+            width: 200px;
+            text-align: center;
+        }
+
+        .cast-member img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .cast-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .cast-member h3 {
+            color: red;
+            margin: 10px 0 5px;
+        }
+
         footer {
             background: black;
             padding: 10px;
@@ -129,6 +165,9 @@
         <h2>About Fight Club</h2>
         <p>Fight Club is a 1999 film directed by David Fincher. It follows an unnamed protagonist who forms an underground fight club with the mysterious Tyler Durden.</p>
     </section>
+	
+	<iframe width="560" height="315" src="https://youtu.be/SUXWAEX2jlg?si=Txfx1RxKpf0JKfg6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
     <section id="rules" class="fade-in">
         <h2>Rules of Fight Club</h2>
@@ -147,8 +186,48 @@
     <section id="gallery" class="fade-in">
         <h2>Fight Club Gallery</h2>
         <div class="gallery-container">
-            <img src="fightclub-gallerie3.jpeg" alt="Fight Club Image 1">
-            <img src="fightclub-gallerie1.jpeg" alt="Fight Club Image
+            <img src="fightclubgall2.jpeg" alt="Fight Club Image 1">
+            <img src="fightclubgall.jpeg" alt="Fight Club Image 2">
+            <img src="fightclubgall1.jpeg" alt="Fight Club Image 3">
+			<img src="fightclubgall3.jpeg" alt="Fight Club Image 4">
+        </div>
+    </section>
+
+    <section id="cast" class="fade-in">
+        <h2>Main Cast</h2>
+        <div class="cast-list">
+            <div class="cast-member">
+                <img src="bradpitt-fightclub.jpeg" alt="Brad Pitt">
+                <h3>Brad Pitt</h3>
+                <p>Tyler Durden</p>
+            </div>
+            <div class="cast-member">
+                <img src="edwardnorton-fightclub.jpeg" alt="Edward Norton">
+                <h3>Edward Norton</h3>
+                <p>The Narrator</p>
+            </div>
+            <div class="cast-member">
+                <img src="helena-fightclub.jpeg" alt="Helena Bonham Carter">
+                <h3>Helena Bonham Carter</h3>
+                <p>Marla Singer</p>
+            </div>
+            <div class="cast-member">
+                <img src="jaredlato-fightclub.jpeg" alt="Jared Leto">
+                <h3>Jared Leto</h3>
+                <p>Angel Face</p>
+            </div>
+        </div>
+    </section>
+
+    
+		<footer>
+			<p>&copy;2025, Jason Bodden. </p>
+		<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
+       
+   
+</body>
+</html>
 
 
 
