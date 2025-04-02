@@ -1,0 +1,558 @@
+@charset "UTF-8";
+body {
+    font-family: sans-serif;
+	background-image: linear-gradient(90deg,gray,lightgreen,gray);
+}
+wrapper {
+    width: 1348px;
+    margin: auto;
+    display: block;
+    padding: 16px;
+    background-color: rgba(255,255,255,.5);
+    height: 1190px;
+}
+h2 {
+    text-align: center;
+}
+
+ul a li {
+    padding: 10px 25px;
+    display: inline-block;
+}
+ul a li:hover {
+    background-color: #02e007;
+}
+nav {
+    background-color: #000000;
+	font-family: "Bebas Neue", sans-serif;
+}
+nav ul a {
+    color: white;
+}
+.newstext {
+    width: 566px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: Bebas Neue;
+    font-size: xx-large;
+    height: 47px;
+    margin-top: 35px;
+}
+img {
+    width: auto;
+    display: table;
+}
+img {
+    margin-left: 0px;
+}
+
+.music-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.gif-container {
+    grid-column: span 1;  /* Keeps it in the same grid spot */
+    text-align: center;
+    padding: 0;  /* Removes padding */
+    margin-top: 20px;  /* Space between the last album and GIF */
+    width: 100%;  /* Makes the container fit the grid space */
+    height: 300px;  /* Keeps the height of the box, adjust if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Centers the GIF inside the container */
+    background-color: transparent;  /* Removes the background */
+    border: none;  /* Removes any borders */
+}
+
+.gif-container img {
+    width: 100%;  /* Makes the GIF responsive */
+    max-width: 300px;  /* Adjusts the max width to control the size */
+    height: auto;  /* Maintains aspect ratio */
+}
+
+
+
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center everything horizontally */
+    padding: 20px;
+}
+
+/* Images container */
+.images-container {
+    display: flex;
+    justify-content: center;  /* Center the images inside the container */
+    margin-bottom: 20px;
+    width: 100%;  /* Make sure the images take up full width */
+    gap: 20px;  /* Adds space between the images */
+}
+
+/* Image item for the three images */
+.image-item {
+    width: 250px;  /* Set size for the images */
+    text-align: center;  /* Center the description */
+}
+
+.image-item img {
+    width: 100%;
+    height: 300px;  /* Maintain consistent image height */
+    object-fit: cover;  /* Ensure images cover the space properly */
+    border-radius: 8px;
+}
+
+/* Image description */
+.image-description {
+    font-size: 1rem;
+    color: #333;  /* Dark color for description text */
+    margin-top: 10px;  /* Space between image and description */
+}
+
+/* Paragraph below the images */
+.news-paragraph {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;  /* Adds space between paragraph and frog GIF */
+    width: 60%;  /* Control the width of the paragraph */
+}
+
+/* Frog GIF container to place it on the right */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;  /* Control the size of the frog container */
+    padding: 20px;
+}
+
+.gif-container img {
+    width: 100%;
+    max-width: 200px;  /* Adjust the max width of the GIF */
+    height: auto;
+}
+
+
+
+/* Tour Section */
+.tour-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Ensures video stays behind the content */
+    opacity: 0.6;  /* Optional: makes the video slightly transparent so the content is more visible */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video covers the entire section */
+}
+
+/* Tour Dates Section */
+.tour-dates {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background for readability */
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%; /* Makes the content width bigger */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-dates h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Bright color for heading */
+}
+
+.tour-dates ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tour-dates li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.tour-dates a {
+    color: #ffcc00; /* Button-like color for the ticket link */
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #333;
+    margin-left: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust columns as needed */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Each album container */
+.album {
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+.album:hover img {
+    transform: scale(1.05);  /* Slight zoom-in effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Album title styling */
+.album h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Email Section */
+.email-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headline and Description */
+.email-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.email-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.email-form input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 70%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.email-form input:focus {
+    border-color: #ffcc00;
+}
+
+.email-form .submit-btn {
+    background-color: #ffcc00;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    max-width: 400px;
+}
+
+.email-form .submit-btn:hover {
+    background-color: #f39c11;
+}
+
+/* Terms and Conditions */
+.terms {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Merch Section */
+.merch-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.merch-section h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Merch Item Grid */
+.merch-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.merch-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.merch-item:hover {
+    transform: scale(1.05);  /* Slight zoom-in effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.merch-item h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.merch-item p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.merch-item button {
+    background-color: #ffcc00;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.merch-item button:hover {
+    background-color: #f39c11;  /* Darker shade of yellow on hover */
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Featured Post */
+.featured-post {
+    margin-bottom: 40px;
+}
+
+.featured-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-post h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.featured-post p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.featured-post a {
+    font-size: 1rem;
+    color: #ffcc00;
+    text-decoration: none;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.featured-post a:hover {
+    color: #f39c11;
+}
+
+/* Blog Posts Grid */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Blog Post Card */
+.blog-post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.blog-post h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.blog-post a {
+    font-size: 1rem;
+    color: #ffcc00;
+    text-decoration: none;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.blog-post a:hover {
+    color: #f39c11;
+}
+
+/* Hover Effect for Blog Posts */
+.blog-post:hover {
+    transform: scale(1.05);  /* Slight zoom-in effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Grid for Smaller Screens */
+@media (max-width: 768px) {
+    .blog-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Privacy Section */
+.privacy-section {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Paragraph Styling */
+.privacy-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Read More Button */
+.read-more-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #f39c11;
+}
+
+
+/* General Styling for Video Section */
+h2.h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Responsive Video Embeds */
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Videos */
+iframe:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+
+
+
