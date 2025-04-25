@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Agency | Jason Bodden 2025</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 100px;
+}
+header {
+    height: 100px;
+    background-color: #A1C7E0;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    padding: 16px;
+    background-color: rgba(255,255,255,.2);
+    ;
+}
+footer {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    bottom: 0px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+}
+.icons {
+    height: 50px;
+    width: auto;
+}
+#Tabs1 li {
+    text-align: center;
+    background-color: rgba(167,206,229,1.00);
+    background-image: url(url);
+    border-top-left-radius: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 12px;
+    margin-bottom: 0;
+    border-top-right-radius: 10px;
+}
+#Tabs1 ul {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    margin-left: 101px;
+}
+#Tabs1 {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 214px;
+}
+.logo {
+    height: auto;
+    width: 151px;
+    text-align: center;
+    padding-left: 800px;
+    padding-right: 44px;
+}
+h2 {
+    text-align: left;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header><img src="travel%20logo.png" alt="" width="148" height="111" class="logo"></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="airplane.png" alt="" width="490" height="420" class="icons"><br>
+      Flights</a></li>
+      <li><a href="#tabs-2"><img src="hotels.png" alt="" width="534" height="534" class="icons"><br>
+      Hotels</a></li>
+      <li><a href="#tabs-3"><img src="cars.png" alt="" width="526" height="382" class="icons"><br>
+      Cars</a></li>
+      <li><a href="#tabs-4"><img src="backpack.png" alt="" width="362" height="409" class="icons"><br>
+      Vacations</a></li>
+      <li><a href="#tabs-5"><img src="cruises.png" alt="" width="444" height="388" class="icons"><br>
+      Cruises</a></li>
+    </ul>
+    <div id="tabs-1">
+      <h2>Flights</h2>
+      <input type="text" placeholder="Leaving form">
+      <input type="text" placeholder="Going to">
+      <input type="date">
+      <input type="date">
+      <input type="submit">
+     </div>
+
+  
+    
+<div id="tabs-2">
+  <h2>Hotels</h2>
+  <input placeholder="Where to?">
+  <label for="date">Date:</label>
+  <input type="date" name="date" id="date">
+  <label for="date2">Date:</label>
+  <input type="date" name="date2" id="date2">
+  <input name="number" type="number" id="number" placeholder="Travelers">
+  <input type="submit" name="submit" id="submit" value="Submit">
+</div>
+    <div id="tabs-3">
+      <h2>Cars    </h2>
+      <input placeholder="Pick-up">
+      <input name="textfield" type="text" id="textfield" placeholder="Drop-off">
+      <label for="date3">Date:</label>
+      <input type="date" name="date3" id="date3">
+      <label for="time">Time:</label>
+      <input type="time" name="time" id="time">
+      <label for="time2">Time:</label>
+      <input type="time" name="time2" id="time2">
+      <input type="submit" name="submit2" id="submit2" value="Submit">
+    </div>
+    <div id="tabs-4">
+      <h2>Vacations</h2>
+      <input placeholder="City ">
+      <label for="date4">Date:</label>
+      <input type="date" name="date4" id="date4">
+      <label for="date5">Date:</label>
+      <input type="date" name="date5" id="date5">
+      <input type="submit" name="submit3" id="submit3" value="Submit">
+    </div>
+    <div id="tabs-5">
+      <h2>Cruises</h2>
+      <input placeholder="Going to">
+      <label for="date6">Date:</label>
+      <input type="date" name="date6" id="date6">
+      <label for="range">Duration:</label>
+      <input type="range" name="range" id="range">
+<input type="submit" name="submit4" id="submit4" value="Submit">
+    </div>
+  </div>
+</wrapper>
+<footer><p>© 2025, Jason Bodden. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
