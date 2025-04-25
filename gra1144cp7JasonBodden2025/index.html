@@ -143,8 +143,17 @@ h2 {
       <label for="date6">Date:</label>
       <input type="date" name="date6" id="date6">
       <label for="range">Duration:</label>
-      <input type="range" name="range" id="range">
+      <input name="range" type="range" id="myRange" max="21" min="1" step="1"> <span id="demo"></span> Days
 <input type="submit" name="submit4" id="submit4" value="Submit">
+		<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
     </div>
   </div>
 </wrapper>
