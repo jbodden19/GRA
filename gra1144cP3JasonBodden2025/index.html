@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,12 +19,8 @@
         }
 
         @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         .fade-in {
@@ -143,6 +139,27 @@
             padding: 10px;
             margin-top: 20px;
         }
+
+        .trailer-section h2 {
+            color: red;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .trailer-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            background: red;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .trailer-button:hover {
+            background: #ff4d4d;
+        }
     </style>
 </head>
 
@@ -165,9 +182,15 @@
         <h2>About Fight Club</h2>
         <p>Fight Club is a 1999 film directed by David Fincher. It follows an unnamed protagonist who forms an underground fight club with the mysterious Tyler Durden.</p>
     </section>
-	
-	<iframe width="560" height="315" src="https://youtu.be/SUXWAEX2jlg?si=Txfx1RxKpf0JKfg6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+    <!-- Trailer link instead of broken embed -->
+    <section class="fade-in trailer-section">
+        <h2>Watch the Trailer</h2>
+        <p>Click below to watch the Fight Club trailer on YouTube.</p>
+        <a class="trailer-button" href="https://www.youtube.com/watch?v=O1nDozs-LxI" target="_blank">
+            Watch Trailer on YouTube
+        </a>
+    </section>
 
     <section id="rules" class="fade-in">
         <h2>Rules of Fight Club</h2>
@@ -189,7 +212,7 @@
             <img src="fightclubgall2.jpeg" alt="Fight Club Image 1">
             <img src="fightclubgall.jpeg" alt="Fight Club Image 2">
             <img src="fightclubgall1.jpeg" alt="Fight Club Image 3">
-			<img src="fightclubgall3.jpeg" alt="Fight Club Image 4">
+            <img src="fightclubgall3.jpeg" alt="Fight Club Image 4">
         </div>
     </section>
 
@@ -219,16 +242,12 @@
         </div>
     </section>
 
-    
-		<footer>
-			<p>&copy;2025, Jason Bodden. </p>
-		<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
-	</footer>
-       
-   
+    <footer>
+        <p>&copy;2025, Jason Bodden.</p>
+        <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    </footer>
 </body>
 </html>
-
 
 
 	
